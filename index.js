@@ -1,6 +1,6 @@
 
 import { NativeModules } from 'react-native';
 
-const { RNRingtoneManager } = NativeModules;
+const { RingtoneManager } = NativeModules;
 
-export default RNRingtoneManager;
+export default RingtoneManager;
