@@ -100,6 +100,13 @@ public class RNRingtoneManagerModule extends ReactContextBaseJavaModule {
         return constants;
     }
 
+    /**
+     * Returns true when the given ringtone type matches the ringtone to compare.
+     * Will default to true if the given ringtone type is RingtoneManager.TYPE_ALL.
+     * @param ringtoneType ringtone type given
+     * @param ringtoneTypeToCompare ringtone type to compare to
+     * @return true if the type matches or is TYPE_ALL
+     */
     private boolean isRingtoneType(int ringtoneType, int ringtoneTypeToCompare) {
         return ringtoneTypeToCompare == ringtoneType || RingtoneManager.TYPE_ALL == ringtoneType;
     }
