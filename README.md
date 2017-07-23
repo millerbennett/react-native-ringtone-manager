@@ -1,20 +1,23 @@
 
 # react-native-ringtone-manager
 
+## iOS Foreword
+
+Setting ringtones programatically is not available in iOS unfortunately. iTunes has it's own ringtone store available and there is no public API for setting ringtones. This library is for Android only.
+
 ## Getting started
 
+With npm:
 `$ npm install react-native-ringtone-manager --save`
+
+Or with yarn:
+`$ yarn install react-native-ringtone-manager`
 
 ### Mostly automatic installation
 
 `$ react-native link react-native-ringtone-manager`
 
 ### Manual installation
-
-
-#### iOS
-
-Setting ringtones programatically is not available in iOS unfortunately. iTunes has it's own ringtone store available and there is no public API for setting ringtones.
 
 #### Android
 
@@ -36,4 +39,26 @@ Setting ringtones programatically is not available in iOS unfortunately. iTunes 
 ```javascript
 import RingtoneManager from 'react-native-ringtone-manager';
 ```
-  
+### Note
+The API is still under development. 
+
+### `RingtoneManager.getRingtones()`
+
+Returns a list of `Ringtones`
+
+### `RingtoneManager.getRingtones(RINGTONE_TYPE)`
+
+Returns a list of `Ringtones` of the given type:
+
+- `RingtoneManager.TYPE_ALL`
+- `RingtoneManager.TYPE_RINGTONE`
+- `RingtoneManager.TYPE_NOTIFICATION`
+- `RingtoneManager.TYPE_ALARM`
+
+### `RingtoneManager.setRingtone(uri)`
+
+Sets the system ringtone to the given ringtone.
+
+### `RingtoneManager.pickRingtone()`
+
+Opens the Android ringtone picker.
