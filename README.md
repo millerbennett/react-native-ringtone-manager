@@ -55,9 +55,19 @@ Returns a list of `Ringtones` of the given type:
 - `RingtoneManager.TYPE_NOTIFICATION`
 - `RingtoneManager.TYPE_ALARM`
 
-### `RingtoneManager.setRingtone(uri)`
+### `RingtoneManager.setRingtone(settings)`
 
-Sets the system ringtone to the given ringtone.
+Sets the system ringtone to the given ringtone. Settings options given below:
+
+| Param        | Type          | Description                                                                       |
+|--------------|---------------|-----------------------------------------------------------------------------------|
+| uri          | String        | The full file path to the ringtone on the file system.                            |
+| title        | String        | The title of the ringtone. Will appear in the picker with this title.             |
+| artist       | String        | The artist of the ringtone.                                                       |
+| size         | Integer       | The size of the ringtone file.                                                    |
+| mimeType     | String        | The mime type of the ringtone, for example: `audio/mp3`                           |
+| duration     | Integer       | The duration of the ringtone in seconds.                                          |
+| ringtoneType | RINGTONE_TYPE | The ringtone type: `TYPE_ALL`, `TYPE_RINGTONE`, `TYPE_NOTIFICATION`, `TYPE_ALARM` |
 
 ### `RingtoneManager.pickRingtone()`
 
