@@ -14,10 +14,7 @@
 
 #### iOS
 
-1. In XCode, in the project navigator, right click `Libraries` ➜ `Add Files to [your project's name]`
-2. Go to `node_modules` ➜ `react-native-ringtone-manager` and add `RNRingtoneManager.xcodeproj`
-3. In XCode, in the project navigator, select your project. Add `libRNRingtoneManager.a` to your project's `Build Phases` ➜ `Link Binary With Libraries`
-4. Run your project (`Cmd+R`)<
+Setting ringtones programatically is not available in iOS unfortunately. iTunes has it's own ringtone store available and there is no public API for setting ringtones.
 
 #### Android
 
@@ -37,9 +34,6 @@
 
 ## Usage
 ```javascript
-import RNRingtoneManager from 'react-native-ringtone-manager';
-
-// TODO: What to do with the module?
-RNRingtoneManager;
+import RingtoneManager from 'react-native-ringtone-manager';
 ```
   
