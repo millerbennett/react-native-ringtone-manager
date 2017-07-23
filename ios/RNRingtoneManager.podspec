@@ -8,11 +8,11 @@ Pod::Spec.new do |s|
                    DESC
   s.homepage     = ""
   s.license      = "MIT"
-  # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
-  s.author             = { "author" => "author@domain.cn" }
+  s.license      = { :type => "MIT", :file => "LICENSE" }
+  s.author       = { "author" => "miller.bennett@gmail.com" }
   s.platform     = :ios, "7.0"
-  s.source       = { :git => "https://github.com/author/RNRingtoneManager.git", :tag => "master" }
-  s.source_files  = "RNRingtoneManager/**/*.{h,m}"
+  s.source       = { :git => "https://github.com/millerbennett/react-native-ringtone-manager.git", :tag => "master" }
+  s.source_files = "RNRingtoneManager/**/*.{h,m}"
   s.requires_arc = true
 
 
